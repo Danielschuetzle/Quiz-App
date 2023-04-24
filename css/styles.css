@@ -1,6 +1,7 @@
 .title {
   text-align: center;
 }
+/* Style the cards */
 
 .card {
   background-color: #5296ef;
@@ -15,4 +16,63 @@
 
 .card p {
   margin: 0.5rem 0;
+}
+
+/* Style the tags */
+
+.tags {
+  background-color: #4be7df;
+  border-radius: 4px;
+  display: block;
+  max-width: 10%;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+/* Style the navigation bottom bar */
+.navbar {
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the navigation img */
+
+.navbar a img {
+  width: 10%;
+  height: 10%;
+}
+
+/* Style the navigation list */
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+/* Style the navigation list items */
+.navbar li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+/* Style the navigation links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+footer {
+  background-color: #5296ef;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
 }
