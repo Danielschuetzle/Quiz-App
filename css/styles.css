@@ -16,3 +16,50 @@
 .card p {
   margin: 0.5rem 0;
 }
+
+.tags {
+  background-color: #4be7df;
+  border-radius: 4px;
+  display: block;
+  max-width: 10%;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #5296ef;
+  border: 3px solid #0e1b64;
+  padding: 1rem;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar li {
+  display: inline;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+footer {
+  background-color: #5296ef;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
