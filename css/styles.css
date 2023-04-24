@@ -1,7 +1,6 @@
 .title {
   text-align: center;
 }
-/* Style the cards */
 
 .card {
   background-color: #5296ef;
@@ -18,8 +17,6 @@
   margin: 0.5rem 0;
 }
 
-/* Style the tags */
-
 .tags {
   background-color: #4be7df;
   border-radius: 4px;
@@ -31,7 +28,6 @@
   text-align: center;
 }
 
-/* Style the navigation bottom bar */
 .navbar {
   padding: 1rem;
   position: fixed;
@@ -42,14 +38,10 @@
   align-items: center;
 }
 
-/* Style the navigation img */
-
 .navbar a img {
   width: 10%;
   height: 10%;
 }
-
-/* Style the navigation list */
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -57,14 +49,11 @@
   font-weight: bold;
   list-style-type: none;
 }
-
-/* Style the navigation list items */
 .navbar li {
   display: inline;
   margin-left: 1rem;
 }
 
-/* Style the navigation links */
 .navbar a {
   color: white;
   text-decoration: none;
@@ -75,4 +64,23 @@ footer {
   padding: 1rem;
   text-align: center;
   margin-top: 2rem;
+}
+.avatar {
+  max-height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.overview {
+  text-align: center;
+  background-color: #5296ef;
+}
+
+.list_overview {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  font-weight: bold;
+  color: red;
+  background-color: #4be7df;
 }
