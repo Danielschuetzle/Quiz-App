@@ -3,12 +3,19 @@
 }
 
 .card {
+  position: relative;
   background-color: #5296ef;
   border: 3px solid #0e1b64;
   margin-bottom: 1rem;
   padding: 1rem;
 }
 
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+}
 .card h2 {
   margin-top: 0;
 }
