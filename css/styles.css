@@ -1,13 +1,16 @@
+/* Define the primary and secondary colors for the app */
 :root {
   --primary-color: #5296ef;
   --secondary-color: #4be7df;
   --border-color: #0e1b64;
 }
 
+/* Add some padding to the bottom of the body to make room for the navbar */
 body {
   padding-bottom: 4rem;
 }
 
+/* Styles for various titles throughout the app */
 .title,
 .card h2,
 .overview,
@@ -16,10 +19,12 @@ body {
   text-align: center;
 }
 
+/* Style the main title of the app */
 .title {
   font-size: 45px;
 }
 
+/* Style the cards that display questions */
 .card {
   position: relative;
   background-color: var(--primary-color);
@@ -28,6 +33,7 @@ body {
   padding: 1rem;
 }
 
+/* Style the bookmark icon on the cards */
 .icon {
   position: absolute;
   top: 0;
@@ -35,11 +41,13 @@ body {
   width: 30px;
 }
 
+/* Style the text and tags on the cards */
 .card p,
 .tags {
   margin: 0.5rem 0;
 }
 
+/* Style the tags on the cards */
 .tags {
   background-color: var(--secondary-color);
   border-color: var(--border-color);
@@ -51,12 +59,14 @@ body {
   text-align: center;
 }
 
+/* Style the "Show Answer" button on the cards */
 .answer-button {
   color: var(--secondary-color);
   background-color: var(--border-color);
   font-size: large;
 }
 
+/* Style the navbar at the bottom of the page */
 .navbar {
   padding: 1rem;
   position: fixed;
@@ -69,12 +79,14 @@ body {
   z-index: 1000;
 }
 
+/* Style the icons in the navbar */
 .navbar img {
   width: 5%;
   height: 5%;
   border-radius: 20%;
 }
 
+/* Style the list of links in the navbar */
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -82,20 +94,25 @@ body {
   list-style: none;
 }
 
+/* Style each link in the navbar */
 .navbar li {
   display: inline;
   margin-left: 1rem;
 }
 
+/* Style the link text in the navbar */
 .navbar a {
   color: white;
   text-decoration: none;
 }
+
+/* Style the active link in the navbar */
 .navbar .active a {
   background-color: #5296ef;
   color: white;
 }
 
+/* Style the footer at the bottom of the page */
 footer {
   background-color: var(--primary-color);
   color: black;
@@ -104,16 +121,19 @@ footer {
   margin-top: 2rem;
 }
 
+/* Style the avatar images */
 .avatar {
   max-height: 120px;
   display: flex;
   align-items: center;
 }
 
+/* Style the overview section */
 .overview {
   background-color: var(--primary-color);
 }
 
+/* Style the list overview section */
 .list_overview {
   display: flex;
   text-align: center;
@@ -122,6 +142,41 @@ footer {
   background-color: var(--secondary-color);
 }
 
+/* Style the bookmark icon when it is highlighted */
 .icon.bookmarked {
   filter: invert(100%);
+}
+
+/* Add a transition to the background color of the buttons when hovered */
+.answer-button:hover {
+  background-color: green;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Add a transition to the color of the bookmark icon when the question is bookmarked */
+.icon.bookmarked {
+  filter: invert(100%);
+  transition: color 0.3s ease-in-out;
+}
+
+/* Make the counter output red when the user types too many characters */
+.char-counter.error {
+  color: red;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Animate the creation of new cards */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card.new {
+  animation: fadeIn 0.5s ease-in-out;
 }
