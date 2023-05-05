@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Quiz App - Add New Card</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html"><img src="css/icons/Home.jpg" alt="Home" /></a>
+          </li>
+          <li>
+            <a href="Bookmarks.html"
+              ><img src="css/icons/Save.jpg" alt="Save"
+            /></a>
+          </li>
+          <li>
+            <a href="Profile.html"
+              ><img src="css/icons/Profil.jpg" alt="Profile"
+            /></a>
+          </li>
+          <li>
+            <a href="form.html"
+              ><img src="css/icons/form-icon.png" alt="form-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content-wrapper">
+      <h1>Add a New Card</h1>
+      <form>
+        <div>
+          <label for="question">Your question:</label><br />
+          <textarea id="question" name="question" maxlength="76"></textarea>
+        </div>
+
+        <div>
+          <label for="answer">Your answer:</label><br />
+          <textarea id="answer" name="answer" maxlength="150"></textarea>
+        </div>
+
+        <div>
+          <label for="tag">Tag:</label><br />
+          <input type="text" id="tag" name="tag" />
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>© 2023 Quiz App</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
