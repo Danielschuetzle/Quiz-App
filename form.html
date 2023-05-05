@@ -26,9 +26,8 @@
           </li>
           <li>
             <a href="form.html"
-              >Add Card
-              <img src="css/icons/form-icon.png" alt="form-icon" />
-            </a>
+              ><img src="css/icons/form-icon.png" alt="form-icon"
+            /></a>
           </li>
         </ul>
       </nav>
@@ -37,21 +36,29 @@
     <div class="content-wrapper">
       <h1>Add a New Card</h1>
       <form>
-        <label for="question">Your question:</label>
-        <textarea id="question" name="question"></textarea>
+        <div>
+          <label for="question">Your question:</label><br />
+          <textarea id="question" name="question" maxlength="76"></textarea>
+        </div>
 
-        <label for="answer">Your answer:</label>
-        <textarea id="answer" name="answer"></textarea>
+        <div>
+          <label for="answer">Your answer:</label><br />
+          <textarea id="answer" name="answer" maxlength="150"></textarea>
+        </div>
 
-        <label for="tag">Tag:</label>
-        <input type="text" id="tag" name="tag" />
-
+        <div>
+          <label for="tag">Tag:</label><br />
+          <input type="text" id="tag" name="tag" />
+        </div>
+        <br />
         <button type="submit">Submit</button>
       </form>
     </div>
+
     <footer>
       <p>© 2023 Quiz App</p>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
