@@ -117,3 +117,7 @@ footer {
   color: red;
   background-color: var(--secondary-color);
 }
+
+.icon.bookmarked {
+  filter: invert(100%);
+}
