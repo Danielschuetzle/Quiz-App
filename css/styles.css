@@ -142,21 +142,23 @@ footer {
   background-color: var(--secondary-color);
 }
 
-/* Style the bookmark icon when it is highlighted */
-.icon.bookmarked {
-  filter: invert(100%);
+/* Style for bookmark icon on hover */
+.icon.bookmarked:hover {
+  filter: brightness(0) invert(1) saturate(0)
+    drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.6));
+  cursor: pointer;
+}
+
+/* Style for bookmark icon when clicked */
+.icon.bookmarked:active {
+  filter: brightness(1.2) invert(1) saturate(0)
+    drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
 }
 
 /* Add a transition to the background color of the buttons when hovered */
 .answer-button:hover {
   background-color: green;
   transition: background-color 0.3s ease-in-out;
-}
-
-/* Add a transition to the color of the bookmark icon when the question is bookmarked */
-.icon.bookmarked {
-  filter: invert(100%);
-  transition: color 0.3s ease-in-out;
 }
 
 /* Make the counter output red when the user types too many characters */
